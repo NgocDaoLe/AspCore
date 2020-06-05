@@ -1,48 +1,293 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - shophoatuoi</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>SHOP HOA TƯƠI ONLINE</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Core Css -->
+    <link href="~/Templatess/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Waves Effect Css -->
+    <link href="~/Templatess/plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="~/Templatess/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="~/Templatess/plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="~/Templatess/css/style.css" rel="stylesheet" />
+
+    <link href="~/Templatess/pages/ui/colors.html" rel="stylesheet" />
+    <link href="~/Templatess/images/user-img-background.jpg" rel="stylesheet" />
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="~/Templatess/css/themes/all-themes.css" rel="stylesheet" />
+    <link href="~/Templatess/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="~/Templatess/plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <link href="~/Templatess/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="~/Templatess/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+    <!-- Multi Select Css -->
+    <link href="~/Templatess/plugins/multi-select/css/multi-select.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="~/Templatess/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="~/Templatess/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="~/Templatess/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="~/Templatess/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">shophoatuoi</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+
+<body class="theme-red">
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <nav class="navbar" style="background-color:MediumVioletRed; font-family:'Times New Roman', Times, serif;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                        <a href="javascript:void(0);" class="bars"></a>
+                        <a class="navbar-brand" href="index.html">SHOP HOA TƯƠI ONLINE</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info" style="background-image: url('/Templatess/images/unnamed.jpg');">
+                <div class="image">
+                    <img src="~/Templatess/images/hh.jpg" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP HOA TƯƠI</div>
+                    <div class="email">shophoatuoi@gmail.com</div>
+
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list" style="font-family:'Times New Roman', Times, serif;">
+                    <li class="header" style="color:red;">QUẢN TRỊ CỬA HÀNG</li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">view_list</i>
+                            <span>
+                                Quản Lí Sản Phẩm
+                            </span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="~/baiviets">
+                                    <i class="material-icons">menu_book</i>
+                                    <span>Bài Viết</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/sanphams">
+                                    <i class="material-icons">card_giftcard</i>
+                                    <span>Sản Phẩm</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/chudes">
+                                    <i class="material-icons">dashboard</i>
+                                    <span>Chủ Đề</span>
+                                </a>
+                            </li>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - shophoatuoi - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <li>
+                                <a href="~/hinhthucs">
+                                    <i class="material-icons">flip_to_back</i>
+                                    <span>Hình Thức</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/mausacs">
+                                    <i class="material-icons">color_lens</i>
+                                    <span>Màu Sắc</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="~/theloais">
+                                    <i class="material-icons">settings_brightness</i>
+                                    <span>Thể Loại</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">view_list</i>
+                            <span>Quản Lí Giỏ Hàng</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="~/hoadons">
+                                    <i class="material-icons">shopping_cart</i>
+                                    <span>Hóa Đơn</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="~/khachhangdats">
+                                    <i class="material-icons">how_to_reg</i>
+                                    <span>Khách Hàng Đặt</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">view_list</i>
+                            <span>Quản Lí Nhân Sự</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="~/chucvus">
+                                    <i class="material-icons">group_work</i>
+                                    <span>Chức Vụ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/nhansus">
+                                    <i class="material-icons">accessibility</i>
+                                    <span>Nhân Sự</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            @RenderBody()
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="~/Templatess/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="~/Templatess/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="~/Templatess/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="~/Templatess/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/Templatess/plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="~/Templatess/plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="~/Templatess/plugins/raphael/raphael.min.js"></script>
+    <script src="~/Templatess/plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="~/Templatess/plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="~/Templatess/plugins/flot-charts/jquery.flot.js"></script>
+    <script src="~/Templatess/plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="~/Templatess/plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="~/Templatess/plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="~/Templatess/plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="~/Templatess/plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+
+    <script src="~/Templatess/js/pages/index.js"></script>
+
+    <script src="~/Templatess/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="~/Templatess/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="~/Templatess/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="~/Templatess/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/Templatess/plugins/node-waves/waves.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="~/Templatess/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
+    <script src="~/Templatess/js/admin.js"></script>
+    <script src="~/Templatess/js/pages/tables/jquery-datatable.js"></script>
+
+    <script src="~/Templatess/plugins/dropzone/dropzone.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="~/Templatess/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="~/Templatess/plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Jquery Spinner Plugin Js -->
+    <script src="~/Templatess/plugins/jquery-spinner/js/jquery.spinner.js"></script>
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="~/Templatess/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+    <!-- noUISlider Plugin Js -->
+    <script src="~/Templatess/plugins/nouislider/nouislider.js"></script>
+
+    <script src="~/Templatess/js/pages/forms/advanced-form-elements.js"></script>
+
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="~/Templatess/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- Bootstrap Datepicker Plugin Js -->
+    <script src="~/Templatess/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <!-- Custom Js -->
+    <script src="~/Templatess/js/pages/forms/basic-form-elements.js"></script>
+    <!-- Demo Js -->
+    <script src="~/Templatess/js/demo.js"></script>
+
+    @RenderSection("scripts", required: false)
 </body>
+
 </html>
