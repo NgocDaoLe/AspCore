@@ -175,4 +175,13 @@ C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\bin\Debug\netcoreapp3.
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\CHUDEs\Index.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Chudes\Create.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Chudes\Delete.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Chudes\Details.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Chudes\Edit.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Chudes\Index.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Create.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Delete.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Details.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Edit.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Index.cshtml.g.cs

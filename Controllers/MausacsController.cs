@@ -9,18 +9,17 @@ using shophoatuoi.Models;
 
 namespace shophoatuoi.Controllers
 {
-    public class ChudesController : Controller
+    public class MausacsController : Controller
     {
         private readonly acomptec_shophoaContext _context = new acomptec_shophoaContext();
 
-        // GET: Chudes
+        // GET: Mausacs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Chude.ToListAsync());
+            return View(await _context.Mausac.ToListAsync());
         }
-        
 
-        // GET: Chudes/Details/5
+        // GET: Mausacs/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -28,44 +27,39 @@ namespace shophoatuoi.Controllers
                 return NotFound();
             }
 
-            var chude = await _context.Chude
-                .FirstOrDefaultAsync(m => m.CdMa == id);
-            if (chude == null)
+            var mausac = await _context.Mausac
+                .FirstOrDefaultAsync(m => m.MsMa == id);
+            if (mausac == null)
             {
                 return NotFound();
             }
 
-            return View(chude);
+            return View(mausac);
         }
 
-        // GET: Chudes/Create
+        // GET: Mausacs/Create
         public IActionResult Create()
         {
-            int MIN = 0001;
-            int MAX = 9999;
-            Random RD = new Random();
-            Chude obj = new Chude();
-            obj.CdMa = RD.Next(MIN, MAX).ToString();
-            return View(obj);
+            return View();
         }
 
-        // POST: Chudes/Create
+        // POST: Mausacs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CdMa,CdTen")] Chude chude)
+        public async Task<IActionResult> Create([Bind("MsMa,MsTen")] Mausac mausac)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(chude);
+                _context.Add(mausac);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(chude);
+            return View(mausac);
         }
 
-        // GET: Chudes/Edit/5
+        // GET: Mausacs/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -73,22 +67,22 @@ namespace shophoatuoi.Controllers
                 return NotFound();
             }
 
-            var chude = await _context.Chude.FindAsync(id);
-            if (chude == null)
+            var mausac = await _context.Mausac.FindAsync(id);
+            if (mausac == null)
             {
                 return NotFound();
             }
-            return View(chude);
+            return View(mausac);
         }
 
-        // POST: Chudes/Edit/5
+        // POST: Mausacs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("CdMa,CdTen")] Chude chude)
+        public async Task<IActionResult> Edit(string id, [Bind("MsMa,MsTen")] Mausac mausac)
         {
-            if (id != chude.CdMa)
+            if (id != mausac.MsMa)
             {
                 return NotFound();
             }
@@ -97,12 +91,12 @@ namespace shophoatuoi.Controllers
             {
                 try
                 {
-                    _context.Update(chude);
+                    _context.Update(mausac);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ChudeExists(chude.CdMa))
+                    if (!MausacExists(mausac.MsMa))
                     {
                         return NotFound();
                     }
@@ -113,10 +107,10 @@ namespace shophoatuoi.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(chude);
+            return View(mausac);
         }
 
-        // GET: Chudes/Delete/5
+        // GET: Mausacs/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -124,30 +118,30 @@ namespace shophoatuoi.Controllers
                 return NotFound();
             }
 
-            var chude = await _context.Chude
-                .FirstOrDefaultAsync(m => m.CdMa == id);
-            if (chude == null)
+            var mausac = await _context.Mausac
+                .FirstOrDefaultAsync(m => m.MsMa == id);
+            if (mausac == null)
             {
                 return NotFound();
             }
 
-            return View(chude);
+            return View(mausac);
         }
 
-        // POST: Chudes/Delete/5
+        // POST: Mausacs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var chude = await _context.Chude.FindAsync(id);
-            _context.Chude.Remove(chude);
+            var mausac = await _context.Mausac.FindAsync(id);
+            _context.Mausac.Remove(mausac);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ChudeExists(string id)
+        private bool MausacExists(string id)
         {
-            return _context.Chude.Any(e => e.CdMa == id);
+            return _context.Mausac.Any(e => e.MsMa == id);
         }
     }
 }
