@@ -4,32 +4,57 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="animated fadeIn">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <div class="card-header" style="font-family:'Times New Roman', Times, serif; font-size:30px ;width: 50%; margin: 0px auto; text-align:center;">
+                        <strong class="card-title">Danh sách màu sắc - <a asp-action="Create" style="color: deeppink;">Tạo mới</a></strong>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.MsMa)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.MsTen)
+                                                </th>
+												<th style="width: 80px"></th>
+                                            </tr>
+                                        </thead>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.MsTen)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MsTen)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MsMa">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MsMa">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MsMa">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.MsMa)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.MsTen)
+                                                    </td>
+													<td>
+                                                        <a asp-action="Edit" asp-route-id="@item.MsMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
+														<a asp-action="Delete" asp-route-id="@item.MsMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
+													</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

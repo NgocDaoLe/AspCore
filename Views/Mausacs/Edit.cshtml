@@ -4,28 +4,52 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">           
+        <div class="body">
+            <form asp-controller="MAUSACs" asp-action="Edit" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
+                <div class="row clearfix" style="font-family:'Times New Roman', Times, serif; width: 50%; margin: 0px auto; text-align:center;">
+                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
+                        <h3>
+                            Cập Nhật Màu Sắc
+                        </h3>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Mã Màu Sắc</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="MsMa" class="form-control" readonly/>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<h4>Mausac</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MsMa" />
-            <div class="form-group">
-                <label asp-for="MsTen" class="control-label"></label>
-                <input asp-for="MsTen" class="form-control" />
-                <span asp-validation-for="MsTen" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label for="CdTen">Tên Màu Sắc</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="MsTen" class="form-control" />
+                                <span asp-validation-for="MsTen" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix" style="width: 50%; margin: 0px auto; text-align:center;">
+                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
+                        <input type="submit" value="Lưu" class="btn btn-danger" />
+                        <button type="button" class=" btn btn-primary">  <a asp-action="Index">Quay Trở Lại</a> </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 

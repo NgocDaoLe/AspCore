@@ -40,7 +40,12 @@ namespace shophoatuoi.Controllers
         // GET: Mausacs/Create
         public IActionResult Create()
         {
-            return View();
+            int MIN = 0001;
+            int MAX = 9999;
+            Random RD = new Random();
+            Mausac obj = new Mausac();
+            obj.MsMa = RD.Next(MIN, MAX).ToString();
+            return View(obj);
         }
 
         // POST: Mausacs/Create
