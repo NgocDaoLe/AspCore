@@ -1,0 +1,72 @@
+@model IEnumerable<shophoatuoi.Models.Khachhangdat>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="animated fadeIn">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <div class="card-header" style="font-family:'Times New Roman', Times, serif; font-size:30px ;width: 50%; margin: 0px auto; text-align:center;">
+                        <strong class="card-title">Danh sách khách hàng đặt - <a asp-action="Create" style="color: deeppink;">Tạo mới</a></strong>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.KhTen)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.KhSdt)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.KhEmail)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.KhDiachi)
+                                                </th>
+												<th style="width: 80px"></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.KhTen)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.KhSdt)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.KhEmail)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.KhDiachi)
+                                                    </td>                                                  
+													<td>
+                                                        <a asp-action="Edit" asp-route-id="@item.KhMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
+														<a asp-action="Delete" asp-route-id="@item.KhMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
+													</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
