@@ -185,3 +185,8 @@ C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Details.cshtml.g.cs
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Edit.cshtml.g.cs
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Mausacs\Index.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Theloais\Create.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Theloais\Delete.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Theloais\Details.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Theloais\Edit.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Theloais\Index.cshtml.g.cs
