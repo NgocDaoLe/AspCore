@@ -20591,6 +20591,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\_Login.cshtml",
+      "TargetPath": "Views\\Shared\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Edit.cshtml",
       "TargetPath": "Views\\Mausacs\\Edit.cshtml",
       "FileKind": "mvc"

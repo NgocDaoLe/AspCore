@@ -195,3 +195,4 @@ C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Khachhangdats\Details.cshtml.g.cs
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Khachhangdats\Edit.cshtml.g.cs
 C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Khachhangdats\Index.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Login.cshtml.g.cs
