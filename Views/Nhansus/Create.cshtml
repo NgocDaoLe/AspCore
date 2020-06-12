@@ -1,0 +1,69 @@
+@model shophoatuoi.Models.Nhansu
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Nhansu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NsMa" class="control-label"></label>
+                <input asp-for="NsMa" class="form-control" />
+                <span asp-validation-for="NsMa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CvMa" class="control-label"></label>
+                <select asp-for="CvMa" class ="form-control" asp-items="ViewBag.CvMa"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsHoten" class="control-label"></label>
+                <input asp-for="NsHoten" class="form-control" />
+                <span asp-validation-for="NsHoten" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsNamsinh" class="control-label"></label>
+                <input asp-for="NsNamsinh" class="form-control" />
+                <span asp-validation-for="NsNamsinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsCmnd" class="control-label"></label>
+                <input asp-for="NsCmnd" class="form-control" />
+                <span asp-validation-for="NsCmnd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsSdt" class="control-label"></label>
+                <input asp-for="NsSdt" class="form-control" />
+                <span asp-validation-for="NsSdt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsDiachi" class="control-label"></label>
+                <input asp-for="NsDiachi" class="form-control" />
+                <span asp-validation-for="NsDiachi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsUsername" class="control-label"></label>
+                <input asp-for="NsUsername" class="form-control" />
+                <span asp-validation-for="NsUsername" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NsPassword" class="control-label"></label>
+                <input asp-for="NsPassword" class="form-control" />
+                <span asp-validation-for="NsPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

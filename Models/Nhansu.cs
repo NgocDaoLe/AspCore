@@ -15,6 +15,6 @@ namespace shophoatuoi.Models
         public string NsUsername { get; set; }
         public string NsPassword { get; set; }
 
-        public virtual Chucvu CvMaNavigation { get; set; }
+        public virtual Chucvu Chucvu { get; set; }
     }
 }

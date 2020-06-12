@@ -503,7 +503,7 @@ namespace shophoatuoi.Models
                     .HasColumnName("NS_USERNAME")
                     .HasMaxLength(50);
 
-                entity.HasOne(d => d.CvMaNavigation)
+                entity.HasOne(d => d.Chucvu)
                     .WithMany(p => p.Nhansu)
                     .HasForeignKey(d => d.CvMa)
                     .OnDelete(DeleteBehavior.ClientSetNull)

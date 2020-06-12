@@ -1,0 +1,48 @@
+@model shophoatuoi.Models.Hoadon
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Hoadon</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HdNgaydat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HdNgaydat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HdNgyagiao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HdNgyagiao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HdDiachinguoinhan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HdDiachinguoinhan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HdTennguoinhan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HdTennguoinhan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HdSdtnguoinhan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HdSdtnguoinhan)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.HdMa">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

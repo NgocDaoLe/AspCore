@@ -1,0 +1,59 @@
+@model IEnumerable<shophoatuoi.Models.Hoadon>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HdNgaydat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HdNgyagiao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HdDiachinguoinhan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HdTennguoinhan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HdSdtnguoinhan)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdNgaydat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdNgyagiao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdDiachinguoinhan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdTennguoinhan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HdSdtnguoinhan)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.HdMa">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.HdMa">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.HdMa">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

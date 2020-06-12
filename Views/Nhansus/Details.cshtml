@@ -1,0 +1,66 @@
+@model shophoatuoi.Models.Nhansu
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Nhansu</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsHoten)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsHoten)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsNamsinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsNamsinh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsCmnd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsCmnd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsSdt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsSdt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsDiachi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsDiachi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsUsername)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsUsername)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NsPassword)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NsPassword)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Chucvu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Chucvu.CvMa)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.NsMa">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
