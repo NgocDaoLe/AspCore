@@ -1,0 +1,62 @@
+@model shophoatuoi.Models.Chitiethoadon
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Chitiethoadon</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CthdMa" class="control-label"></label>
+                <input asp-for="CthdMa" class="form-control" />
+                <span asp-validation-for="CthdMa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpMa" class="control-label"></label>
+                <select asp-for="SpMa" class ="form-control" asp-items="ViewBag.SpMa"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HdMa" class="control-label"></label>
+                <select asp-for="HdMa" class ="form-control" asp-items="ViewBag.HdMa"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="KhMa" class="control-label"></label>
+                <select asp-for="KhMa" class ="form-control" asp-items="ViewBag.KhMa"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CthdSoluong" class="control-label"></label>
+                <input asp-for="CthdSoluong" class="form-control" />
+                <span asp-validation-for="CthdSoluong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CthdTamtinh" class="control-label"></label>
+                <input asp-for="CthdTamtinh" class="form-control" />
+                <span asp-validation-for="CthdTamtinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CthdPhigiaohang" class="control-label"></label>
+                <input asp-for="CthdPhigiaohang" class="form-control" />
+                <span asp-validation-for="CthdPhigiaohang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CthdThanhtien" class="control-label"></label>
+                <input asp-for="CthdThanhtien" class="form-control" />
+                <span asp-validation-for="CthdThanhtien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
