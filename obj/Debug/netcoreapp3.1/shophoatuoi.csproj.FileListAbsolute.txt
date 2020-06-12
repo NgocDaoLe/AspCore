@@ -369,3 +369,13 @@ C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\De
 C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Details.cshtml.g.cs
 C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Edit.cshtml.g.cs
 C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Index.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chitiethoadons\Create.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chitiethoadons\Delete.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chitiethoadons\Details.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chitiethoadons\Edit.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chitiethoadons\Index.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chucvus\Create.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chucvus\Delete.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chucvus\Details.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chucvus\Edit.cshtml.g.cs
+C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Chucvus\Index.cshtml.g.cs

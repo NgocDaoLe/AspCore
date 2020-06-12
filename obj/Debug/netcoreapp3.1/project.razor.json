@@ -20521,6 +20521,11 @@
   "RootNamespace": "shophoatuoi",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Delete.cshtml",
+      "TargetPath": "Views\\Chucvus\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Mausacs\\Delete.cshtml",
       "TargetPath": "Views\\Mausacs\\Delete.cshtml",
       "FileKind": "mvc"
@@ -20533,6 +20538,11 @@
     {
       "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Khachhangdats\\Index.cshtml",
       "TargetPath": "Views\\Khachhangdats\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Create.cshtml",
+      "TargetPath": "Views\\Chucvus\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20596,6 +20606,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Details.cshtml",
+      "TargetPath": "Views\\Chucvus\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -20656,6 +20671,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Edit.cshtml",
+      "TargetPath": "Views\\Chucvus\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethoadons\\Edit.cshtml",
       "TargetPath": "Views\\Chitiethoadons\\Edit.cshtml",
       "FileKind": "mvc"
@@ -20668,6 +20688,11 @@
     {
       "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Nhansus\\Details.cshtml",
       "TargetPath": "Views\\Nhansus\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Index.cshtml",
+      "TargetPath": "Views\\Chucvus\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
