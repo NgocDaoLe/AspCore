@@ -1,22 +1,23 @@
-@model shophoatuoi.Models.Hoadon
+@model shophoatuoi.Models.Chitiethoadon
 
 @{
     ViewData["Title"] = "Edit";
 }
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="card">           
         <div class="body">
-            <form asp-controller="Hoadons" asp-action="Edit" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
+            <form asp-controller="Chitiethoadons" asp-action="Edit" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
                 <div class="row clearfix" style="font-family:'Times New Roman', Times, serif; width: 50%; margin: 0px auto; text-align:center;">
                     <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                         <h3>
-                            Cập Nhật Hóa Đơn
+                            Cập Nhật Chi Tiết Hóa Đơn
                         </h3>
                     </div>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label>Mã Hóa Đơn</label>
+                        <label>Mã Chi Tiết Hóa Đơn</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
@@ -29,13 +30,13 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="HdNgaydat">Ngày Đặt</label>
+                        <label for="SpMa">Mã Sản Phẩm</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdNgaydat" class="form-control" />
-                                <span asp-validation-for="HdNgaydat" class="text-danger"></span>
+                                <select asp-for="SpMa" class="form-control" asp-items="ViewBag.SpMa"></select>
+                                <span asp-validation-for="SpMa" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -43,13 +44,13 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="HdNgyagiao">Ngày Giao</label>
+                        <label for="HdMa">Mã Hóa Đơn</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdNgyagiao" class="form-control" />
-                                <span asp-validation-for="HdNgyagiao" class="text-danger"></span>
+                                <select asp-for="HdMa" class="form-control" asp-items="ViewBag.HdMa"></select>
+                                <span asp-validation-for="HdMa" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -57,13 +58,13 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="HdDiachinguoinhan">Địa Chỉ Người Nhận</label>
+                        <label for="KhMa">Mã Khách Hàng</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdDiachinguoinhan" class="form-control" />
-                                <span asp-validation-for="HdDiachinguoinhan" class="text-danger"></span>
+                                <select asp-for="KhMa" class="form-control" asp-items="ViewBag.KhMa"></select>
+                                <span asp-validation-for="KhMa" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -71,13 +72,13 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="HdTennguoinhan">Tên Người Nhận</label>
+                        <label for="CthdSoluong">Số Lượng</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdTennguoinhan" class="form-control" />
-                                <span asp-validation-for="HdTennguoinhan" class="text-danger"></span>
+                                <input asp-for="CthdSoluong" class="form-control" />
+                                <span asp-validation-for="CthdSoluong" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -85,13 +86,41 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="HdSdtnguoinhan">SĐT Người Nhận</label>
+                        <label for="CthdTamtinh">Tạm Tính</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdSdtnguoinhan" class="form-control" />
-                                <span asp-validation-for="HdSdtnguoinhan" class="text-danger"></span>
+                                <input asp-for="CthdTamtinh" class="form-control" />
+                                <span asp-validation-for="CthdTamtinh" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label for="CthdPhigiaohang">Phí Giao Hàng</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="CthdPhigiaohang" class="form-control" />
+                                <span asp-validation-for="CthdPhigiaohang" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label for="CthdThanhtien">Thành Tiền</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="CthdThanhtien" class="form-control" />
+                                <span asp-validation-for="CthdThanhtien" class="text-danger"></span>
                             </div>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ namespace shophoatuoi.Models
             : base(options)
         {
         }
-
+        public virtual DbSet<Baiviet> Dangnhap { get; set; }
         public virtual DbSet<Baiviet> Baiviet { get; set; }
         public virtual DbSet<Chitietchude> Chitietchude { get; set; }
         public virtual DbSet<Chitiethinhthuc> Chitiethinhthuc { get; set; }

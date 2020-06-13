@@ -11,6 +11,7 @@ namespace shophoatuoi.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly acomptec_shophoaContext _context = new acomptec_shophoaContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)

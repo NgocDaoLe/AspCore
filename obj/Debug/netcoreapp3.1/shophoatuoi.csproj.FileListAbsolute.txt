@@ -369,3 +369,13 @@ C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\De
 C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Details.cshtml.g.cs
 C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Edit.cshtml.g.cs
 C:\Users\X507M-PC\Desktop\AspCore\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Index.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Create.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Delete.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Details.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Edit.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Hoadons\Index.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Nhansus\Create.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Nhansus\Delete.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Nhansus\Details.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Nhansus\Edit.cshtml.g.cs
+C:\Users\ASUS\OneDrive\Máy tính\shophoatuoi\shophoatuoi\obj\Debug\netcoreapp3.1\Razor\Views\Nhansus\Index.cshtml.g.cs

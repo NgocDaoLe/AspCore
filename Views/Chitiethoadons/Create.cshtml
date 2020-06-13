@@ -1,4 +1,4 @@
-@model shophoatuoi.Models.Hoadon
+@model shophoatuoi.Models.Chitiethoadon
 
 @{
     ViewData["Title"] = "Create";
@@ -6,22 +6,22 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="card">           
         <div class="body">
-            <form asp-controller="Hoadons" asp-action="Create" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
+            <form asp-controller="Chitiethoadons" asp-action="Create" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
                 <div class="row clearfix" style="font-family:'Times New Roman', Times, serif; width: 50%; margin: 0px auto; text-align:center;">
                     <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                         <h3>
-                            Tạo Mới Hóa Đơn
+                            Tạo Mới Chi Tiết Hóa Đơn
                         </h3>
                     </div>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label>Mã Hóa Đơn</label>
+                        <label>Mã Chi Tiết Hóa Đơn</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdMa" type="text" class="form-control"/>
+                                <input asp-for="CthdMa" type="text" class="form-control"/>
                             </div>
                         </div>
                     </div>
@@ -29,25 +29,12 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="CdTen">Ngày Đặt</label>
+                        <label asp-for="SpMa">Mã Sản Phẩm</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdNgaydat" type="text" class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               <div class="row clearfix">
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="CdTen">Ngày Giao</label>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
-                        <div class="form-group">
-                            <div class="form-line">
-                                <input asp-for="HdNgyagiao" type="text" class="form-control"/>
+                                <select for="SpMa" class ="form-control" asp-items="ViewBag.SpMa"></select>
                             </div>
                         </div>
                     </div>
@@ -55,12 +42,12 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="CdTen">Địa Chỉ Người Nhận</label>
+                        <label for="HdMa">Mã Hóa Đơn</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdDiachinguoinhan" type="text" class="form-control"/>
+                                <select asp-for="HdMa" class ="form-control" asp-items="ViewBag.HdMa"></select>
                             </div>
                         </div>
                     </div>
@@ -68,12 +55,12 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="CdTen">Tên Người Nhận</label>
+                        <label for="KhMa">Mã Khách Hàng</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdTennguoinhan" type="text" class="form-control"/>
+                                <select asp-for="KhMa" class ="form-control" asp-items="ViewBag.KhMa"></select>
                             </div>
                         </div>
                     </div>
@@ -81,17 +68,56 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="CdTen">SĐT Người Nhận</label>
+                        <label for="CthdSoluong">Số Lượng </label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="HdSdtnguoinhan" type="text" class="form-control"/>
+                                <input asp-for="CthdSoluong" type="text" class="form-control"/>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label for="CthdTamtinh">Tạm Tính</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="CthdTamtinh" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label for="CthdPhigiaohang">Phí Giao Hàng</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="CthdPhigiaohang" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label for=" CthdThanhtien">Thành Tiền</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for=" CthdThanhtien" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
                 <div class="row clearfix" style="width: 50%; margin: 0px auto; text-align:center;">
                     <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                         <input type="submit" value="Tạo Mới" class="btn btn-danger" />
@@ -102,3 +128,4 @@
         </div>
     </div>
 </div>
+

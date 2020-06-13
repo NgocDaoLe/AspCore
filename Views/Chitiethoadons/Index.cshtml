@@ -1,4 +1,4 @@
-@model IEnumerable<shophoatuoi.Models.Hoadon>
+@model IEnumerable<shophoatuoi.Models.Chitiethoadon>
 
 @{
     ViewData["Title"] = "Index";
@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="header">
                     <div class="card-header" style="font-family:'Times New Roman', Times, serif; font-size:30px ;width: 50%; margin: 0px auto; text-align:center;">
-                        <strong class="card-title">Danh Sách Hóa Đơn - <a asp-action="Create" style="color: deeppink;">Tạo mới</a></strong>
+                        <strong class="card-title">Danh Sách Chi Tiết Hóa Đơn - <a asp-action="Create" style="color: deeppink;">Tạo mới</a></strong>
                     </div>
                 </div>
                 <div class="body">
@@ -21,22 +21,25 @@
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.HdMa)
+                                                    @Html.DisplayNameFor(model => model.CthdMa)
                                                 </th>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.HdNgaydat)
+                                                    @Html.DisplayNameFor(model => model.CthdSoluong)
                                                 </th>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.HdNgyagiao)
+                                                    @Html.DisplayNameFor(model => model.CthdTamtinh)
                                                 </th>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.HdDiachinguoinhan)
+                                                    @Html.DisplayNameFor(model => model.CthdPhigiaohang)
                                                 </th>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.HdTennguoinhan)
+                                                    @Html.DisplayNameFor(model => model.HdMaNavigation)
                                                 </th>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.HdSdtnguoinhan)
+                                                    @Html.DisplayNameFor(model => model.KhMaNavigation)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.SpMaNavigation)
                                                 </th>
 												<th style="width: 80px"></th>
                                             </tr>
@@ -47,26 +50,34 @@
                                             {
                                                 <tr>
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.HdMa)
+                                                        @Html.DisplayFor(modelItem => item.CthdMa)
                                                     </td>
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.HdNgaydat)
-                                                    </td>
-                                                    <td>
-                                                        @Html.DisplayFor(modelItem => item.HdNgyagiao)
-                                                    </td>
-                                                    <td>
-                                                        @Html.DisplayFor(modelItem => item.HdDiachinguoinhan)
-                                                    </td>
-                                                    <td>
-                                                        @Html.DisplayFor(modelItem => item.HdTennguoinhan)
-                                                    </td>
-                                                    <td>
-                                                        @Html.DisplayFor(modelItem => item.HdSdtnguoinhan)
+                                                        @Html.DisplayFor(modelItem => item.CthdSoluong)
                                                     </td>
 													<td>
-                                                        <a asp-action="Edit" asp-route-id="@item.HdMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
-														<a asp-action="Delete" asp-route-id="@item.HdMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
+                                                        <td>
+                                                        @Html.DisplayFor(modelItem => item.CthdTamtinh)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.CthdPhigiaohang)
+                                                    </td>
+													<td>
+                                                        <td>
+                                                        @Html.DisplayFor(modelItem => item.CthdThanhtien)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.HdMaNavigation.HdMa)
+                                                    </td>
+                                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.KhMaNavigation.KhMa)
+                                                    </td>
+                                                     <td>
+                                                        @Html.DisplayFor(modelItem => item.SpMaNavigation.SpMa)
+                                                    </td>
+													<td>
+                                                        <a asp-action="Edit" asp-route-id="@item.CthdMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
+														<a asp-action="Delete" asp-route-id="@item.CthdMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
 													</td>
                                                 </tr>
                                             }

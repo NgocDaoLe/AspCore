@@ -11,12 +11,7 @@ namespace shophoatuoi.Controllers
 {
     public class HoadonsController : Controller
     {
-        private readonly acomptec_shophoaContext _context;
-
-        public HoadonsController(acomptec_shophoaContext context)
-        {
-            _context = context;
-        }
+        private readonly acomptec_shophoaContext _context = new acomptec_shophoaContext();
 
         // GET: Hoadons
         public async Task<IActionResult> Index()
