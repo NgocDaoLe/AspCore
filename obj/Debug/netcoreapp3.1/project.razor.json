@@ -20521,6 +20521,16 @@
   "RootNamespace": "shophoatuoi",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Delete.cshtml",
+      "TargetPath": "Views\\Mausacs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Details.cshtml",
+      "TargetPath": "Views\\Hoadons\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Details.cshtml",
       "TargetPath": "Views\\Chudes\\Details.cshtml",
       "FileKind": "mvc"
@@ -20551,8 +20561,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Edit.cshtml",
+      "TargetPath": "Views\\Hoadons\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Details.cshtml",
+      "TargetPath": "Views\\Nhansus\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Create.cshtml",
+      "TargetPath": "Views\\Hoadons\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Index.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20571,6 +20601,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Delete.cshtml",
+      "TargetPath": "Views\\Nhansus\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -20583,6 +20618,11 @@
     {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Theloais\\Index.cshtml",
       "TargetPath": "Views\\Theloais\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Edit.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20606,8 +20646,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Delete.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Edit.cshtml",
+      "TargetPath": "Views\\Nhansus\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Create.cshtml",
+      "TargetPath": "Views\\Nhansus\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Index.cshtml",
+      "TargetPath": "Views\\Nhansus\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20631,6 +20691,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Details.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Create.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Delete.cshtml",
+      "TargetPath": "Views\\Hoadons\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Edit.cshtml",
       "TargetPath": "Views\\Chudes\\Edit.cshtml",
       "FileKind": "mvc"
@@ -20638,6 +20713,11 @@
     {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Details.cshtml",
       "TargetPath": "Views\\Mausacs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Index.cshtml",
+      "TargetPath": "Views\\Hoadons\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
