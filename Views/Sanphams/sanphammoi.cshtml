@@ -1,0 +1,57 @@
+﻿@model IEnumerable<shophoatuoi.Models.Sanpham>
+@{
+    ViewData["Title"] = "sanphammoi";
+    Layout = "~/Views/Shared/_Layout_SanPham.cshtml";
+}
+@Html.Partial("slidesp")
+    <div class="row">
+        <div class="col-md-3 col-sm-4">
+            <div class="product-catagori-area">
+                <div class="product-categeries">
+                    <h2>Sản Phẩm Nỗi Bật</h2>
+                    @Html.Partial("spnoibat")
+                </div>
+                <div class="best-seller-area">
+                    <h2 class="header-title">Sản Phẩm Bán Chạy</h2>
+                    @Html.Partial("spbanchay")
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-8">
+            <div class="product-items-area">
+                <div class="product-items">
+                    <h2 class="product-header">Danh Mục Sản Phẩm</h2>
+                    <div class="row">
+                        <div id="product-slider" class="owl-carousel">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-4">
+                                    <div class="single-product">
+                                        <div class="single-product-img">
+                                            <a href="#">
+                                                <img class="primary-img" src="@Html.DisplayFor(modelItem => item.Hinhanh.HaUrl)" alt="product">
+                                                <img class="secondary-img" src="@Html.DisplayFor(modelItem => item.Hinhanh.HaUrl)" alt="product">
+                                            </a>
+                                            <div class="single-product-action">
+                                                <a href="#"><i class="fa fa-external-link"></i></a>
+                                                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single-product-content">
+                                            <div class="product-content-left">
+                                                <h2><a href="#">@Html.DisplayFor(modelItem => item.SpTen)</a></h2>
+                                                
+                                            </div>
+                                            <div class="product-content-right">
+                                                <h3>@Html.DisplayFor(modelItem => item.SpGia)VNĐ</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

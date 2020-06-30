@@ -14,9 +14,10 @@ namespace shophoatuoi.Controllers
         private readonly acomptec_shophoaContext _context = new acomptec_shophoaContext();
 
         // GET: Chitiethoadons
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
-            var acomptec_shophoaContext = _context.Chitiethoadon.Include(c => c.HdMaNavigation).Include(c => c.KhMaNavigation).Include(c => c.SpMaNavigation);
+            var acomptec_shophoaContext = _context.Chitiethoadon.Include(c => c.HdMaNavigation).Include(c => c.KhMaNavigation).Include(c => c.SpMaNavigation).Where(c => c.HdMa == id);
+            ViewBag.HdMa = id;
             return View(await acomptec_shophoaContext.ToListAsync());
         }
 
@@ -42,12 +43,18 @@ namespace shophoatuoi.Controllers
         }
 
         // GET: Chitiethoadons/Create
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
-            ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa");
-            ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhMa");
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa");
-            return View();
+            ViewData["KhTen"] = new SelectList(_context.Khachhangdat, "KhMa", "KhTen");
+            ViewData["SpTen"] = new SelectList(_context.Sanpham, "SpMa", "SpTen");
+            int MIN = 0001;
+            int MAX = 9999;
+            Random RD = new Random();
+            Chitiethoadon obj = new Chitiethoadon();
+            obj.CthdMa = RD.Next(MIN, MAX).ToString();
+            
+            ViewBag.HdMa =id;
+            return View(obj);
         }
 
         // POST: Chitiethoadons/Create
@@ -57,16 +64,18 @@ namespace shophoatuoi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CthdMa,SpMa,HdMa,KhMa,CthdSoluong,CthdTamtinh,CthdPhigiaohang,CthdThanhtien")] Chitiethoadon chitiethoadon)
         {
+           
+            string duongdan = "Index/" + chitiethoadon.HdMa;
             if (ModelState.IsValid)
             {
                 _context.Add(chitiethoadon);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","hoadons", new { @id = chitiethoadon.HdMa});
             }
-            ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
-            ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhMa", chitiethoadon.KhMa);
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethoadon.SpMa);
-            return View(chitiethoadon);
+            //ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
+            ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhTen", chitiethoadon.KhMa);
+            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpTen", chitiethoadon.SpMa);
+            return View(duongdan);
         }
 
         // GET: Chitiethoadons/Edit/5
@@ -95,6 +104,7 @@ namespace shophoatuoi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("CthdMa,SpMa,HdMa,KhMa,CthdSoluong,CthdTamtinh,CthdPhigiaohang,CthdThanhtien")] Chitiethoadon chitiethoadon)
         {
+            string duongdan = "Index/" + chitiethoadon.HdMa;
             if (id != chitiethoadon.CthdMa)
             {
                 return NotFound();
@@ -118,12 +128,12 @@ namespace shophoatuoi.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(duongdan));
             }
             ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
-            ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhMa", chitiethoadon.KhMa);
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethoadon.SpMa);
-            return View(chitiethoadon);
+            ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhTen", chitiethoadon.KhMa);
+            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpTen", chitiethoadon.SpMa);
+            return View(duongdan);
         }
 
         // GET: Chitiethoadons/Delete/5

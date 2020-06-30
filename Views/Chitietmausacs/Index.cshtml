@@ -1,0 +1,61 @@
+@model IEnumerable<shophoatuoi.Models.Chitietmausac>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="animated fadeIn">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <div class="card-header" style="font-family:'Times New Roman', Times, serif; font-size:30px ;width: 50%; margin: 0px auto; text-align:center;">
+                        <strong class="card-title">Chi Tiết Màu Sắc - <a asp-action="Create" style="color: deeppink;">Tạo Mới</a></strong>
+                    </div>
+                </div>
+                  <div class="body">
+                    <div class="table-responsive">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.CtmsMa)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.MsMaNavigation.MsTen)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.SpMaNavigation.SpTen)
+                                                </th>
+                                                <th style="width: 115px"></th>
+                                               
+
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.CtmsMa)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.MsMaNavigation.MsTen)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.SpMaNavigation.SpTen)
+                                                </td>
+                                                <td>
+                                                    <a href="@Url.Action("Edit","CHITIETMAUSACs", new { id = item.CtmsMa })" class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
+                                                    <a href="@Url.Action("Delete", "CHITIETMAUSACs", new { id = item.CtmsMa})" class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
+                                                </td>
+                                            </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>

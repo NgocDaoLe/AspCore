@@ -6,7 +6,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="card">           
         <div class="body">
-            <form asp-controller="Chitiethoadons" asp-action="Create" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
+            <form asp-controller="Chitiethoadons" asp-action="Create" asp-route-id="@ViewBag.HdMa" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
                 <div class="row clearfix" style="font-family:'Times New Roman', Times, serif; width: 50%; margin: 0px auto; text-align:center;">
                     <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                         <h3>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label>Mã Chi Tiết Hóa Đơn</label>
+                        <label>Mã</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
@@ -29,12 +29,12 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label asp-for="SpMa">Mã Sản Phẩm</label>
+                        <label>Sản Phẩm</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <select for="SpMa" class ="form-control" asp-items="ViewBag.SpMa"></select>
+                                <select asp-for="SpMa" class="form-control show-tick" asp-items="ViewBag.SpTen"></select>
                             </div>
                         </div>
                     </div>
@@ -42,12 +42,13 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="HdMa">Mã Hóa Đơn</label>
+                        <label>Hóa Đơn</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <select asp-for="HdMa" class ="form-control" asp-items="ViewBag.HdMa"></select>
+                                <input asp-for="HdMa" class="form-control" value="@ViewBag.HdMa" readonly="readonly"/>
+                                
                             </div>
                         </div>
                     </div>
@@ -55,12 +56,12 @@
 
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label for="KhMa">Mã Khách Hàng</label>
+                        <label for="KhMa">Khách Hàng</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <select asp-for="KhMa" class ="form-control" asp-items="ViewBag.KhMa"></select>
+                                <select asp-for="KhMa" class="form-control show-tick" asp-items="ViewBag.KhTen"></select>
                             </div>
                         </div>
                     </div>
@@ -73,7 +74,7 @@
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="CthdSoluong" type="text" class="form-control"/>
+                                <input asp-for="CthdSoluong" type="number" min="1" class="form-control"/>
                             </div>
                         </div>
                     </div>
@@ -86,7 +87,7 @@
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="CthdTamtinh" type="text" class="form-control"/>
+                                <input asp-for="CthdTamtinh" type="number" min="0" class="form-control"/>
                             </div>
                         </div>
                     </div>
@@ -99,7 +100,7 @@
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for="CthdPhigiaohang" type="text" class="form-control"/>
+                                <input asp-for="CthdPhigiaohang" type="number" min="0" class="form-control"/>
                             </div>
                         </div>
                     </div>
@@ -112,7 +113,7 @@
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <input asp-for=" CthdThanhtien" type="text" class="form-control"/>
+                                <input asp-for=" CthdThanhtien" type="number" min="0" class="form-control"/>
                             </div>
                         </div>
                     </div>

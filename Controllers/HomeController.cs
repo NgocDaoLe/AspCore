@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using shophoatuoi.Models;
+using Microsoft.AspNetCore.Session;
+using Microsoft.AspNetCore.Http;
 
 namespace shophoatuoi.Controllers
 {
@@ -21,8 +23,10 @@ namespace shophoatuoi.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.User = HttpContext.Session.GetString("User");
             return View();
         }
+
 
         public IActionResult Privacy()
         {
@@ -34,5 +38,7 @@ namespace shophoatuoi.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        
     }
 }

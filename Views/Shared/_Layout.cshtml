@@ -22,6 +22,13 @@
     <!-- Animation Css -->
     <link href="~/Templatess/plugins/animate-css/animate.css" rel="stylesheet" />
 
+        <!-- Sweet Alert Css -->
+    <link href="~/Templatess/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <link href="~/Templatess/pages/ui/dialogs.html" rel="stylesheet">
+    <link href="~/Templatess/plugins/waitme/waitMe.css" rel="stylesheet" />
+
+
     <!-- Morris Chart Css-->
     <link href="~/Templatess/plugins/morrisjs/morris.css" rel="stylesheet" />
 
@@ -29,6 +36,7 @@
     <link href="~/Templatess/css/style.css" rel="stylesheet" />
 
     <link href="~/Templatess/pages/ui/colors.html" rel="stylesheet" />
+
     <link href="~/Templatess/images/user-img-background.jpg" rel="stylesheet" />
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="~/Templatess/css/themes/all-themes.css" rel="stylesheet" />
@@ -117,6 +125,7 @@
                                 </a>
                             </li>
 
+                            
                             <li>
                                 <a href="~/hinhthucs">
                                     <i class="material-icons">flip_to_back</i>
@@ -190,15 +199,17 @@
             @RenderBody()
         </div>
     </section>
-
-    <!-- Jquery Core Js -->
-    <script src="~/Templatess/plugins/jquery/jquery.min.js"></script>
-
     <!-- Bootstrap Core Js -->
     <script src="~/Templatess/plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
     <script src="~/Templatess/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="~/Templatess/plugins/momentjs/moment.js"></script>
+    
+    <!-- Autosize Plugin Js -->
+    <script src="~/Templatess/plugins/autosize/autosize.js"></script>
 
     <!-- Slimscroll Plugin Js -->
     <script src="~/Templatess/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
@@ -232,17 +243,7 @@
 
     <script src="~/Templatess/plugins/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core Js -->
-    <script src="~/Templatess/plugins/bootstrap/js/bootstrap.js"></script>
 
-    <!-- Select Plugin Js -->
-    <script src="~/Templatess/plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Slimscroll Plugin Js -->
-    <script src="~/Templatess/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- Waves Effect Plugin Js -->
-    <script src="~/Templatess/plugins/node-waves/waves.js"></script>
     <script src="~/Templatess/plugins/jquery-datatable/jquery.dataTables.js"></script>
     <script src="~/Templatess/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
     <script src="~/Templatess/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
@@ -285,6 +286,8 @@
     <script src="~/Templatess/js/pages/forms/basic-form-elements.js"></script>
     <!-- Demo Js -->
     <script src="~/Templatess/js/demo.js"></script>
+
+    <script src="~/Templatess/plugins/sweetalert/sweetalert.min.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>

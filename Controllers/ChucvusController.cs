@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using shophoatuoi.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace shophoatuoi.Controllers
 {
@@ -16,6 +17,7 @@ namespace shophoatuoi.Controllers
         // GET: Chucvus
         public async Task<IActionResult> Index()
         {
+            ViewBag.User = HttpContext.Session.GetString("User");
             return View(await _context.Chucvu.ToListAsync());
         }
 

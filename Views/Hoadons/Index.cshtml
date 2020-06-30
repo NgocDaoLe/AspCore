@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="header">
                     <div class="card-header" style="font-family:'Times New Roman', Times, serif; font-size:30px ;width: 50%; margin: 0px auto; text-align:center;">
-                        <strong class="card-title">Danh Sách Hóa Đơn - <a asp-action="Create" style="color: deeppink;">Tạo mới</a></strong>
+                        <strong class="card-title">Danh Sách Hóa Đơn - <a asp-action="Create" style="color: deeppink;">Tạo Mới</a></strong>
                     </div>
                 </div>
                 <div class="body">
@@ -38,7 +38,7 @@
                                                 <th>
                                                     @Html.DisplayNameFor(model => model.HdSdtnguoinhan)
                                                 </th>
-												<th style="width: 80px"></th>
+												<th style="width: 120px"></th>
                                             </tr>
                                         </thead>
 
@@ -65,6 +65,7 @@
                                                         @Html.DisplayFor(modelItem => item.HdSdtnguoinhan)
                                                     </td>
 													<td>
+                                                        <a asp-action="Index", asp-controller="Chitiethoadons" asp-route-id="@item.HdMa" class="btn bg-orange waves-effect"><i class="material-icons">shopping_cart</i></a>
                                                         <a asp-action="Edit" asp-route-id="@item.HdMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
 														<a asp-action="Delete" asp-route-id="@item.HdMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
 													</td>

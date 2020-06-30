@@ -16,10 +16,11 @@ namespace shophoatuoi.Controllers
         
 
         // GET: Nhansus
-        public async Task<IActionResult> Index()
+        
+        public ActionResult Index()
         {
-            
-            return View(await _context.Nhansu.ToListAsync());
+            var nHANSUs = _context.Nhansu.Include(n => n.Chucvu);
+            return View(nHANSUs.ToList());
         }
 
         // GET: Nhansus/Details/5
@@ -45,7 +46,7 @@ namespace shophoatuoi.Controllers
         public IActionResult Create()
         {
 
-            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvMa");
+            ViewData["CvTen"] = new SelectList(_context.Chucvu, "CvMa", "CvTen");
             int MIN = 1000;
             int MAX = 9999;
             Random RD = new Random();
@@ -67,13 +68,14 @@ namespace shophoatuoi.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvMa", nhansu.CvMa);
+            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvTen", nhansu.CvMa);
             return View(nhansu);
         }
 
         // GET: Nhansus/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
+            ViewData["CvTen"] = new SelectList(_context.Chucvu, "CvMa", "CvTen");
             if (id == null)
             {
                 return NotFound();
@@ -84,7 +86,7 @@ namespace shophoatuoi.Controllers
             {
                 return NotFound();
             }
-            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvMa", nhansu.CvMa);
+            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvTen", nhansu.CvMa);
             return View(nhansu);
         }
 
@@ -120,7 +122,7 @@ namespace shophoatuoi.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvMa", nhansu.CvMa);
+            ViewData["CvMa"] = new SelectList(_context.Chucvu, "CvMa", "CvTen", nhansu.CvMa);
             return View(nhansu);
         }
 

@@ -14,7 +14,7 @@ namespace shophoatuoi.Models
             : base(options)
         {
         }
-        public virtual DbSet<Baiviet> Dangnhap { get; set; }
+        public virtual DbSet<Login> Login { get; set; }
         public virtual DbSet<Baiviet> Baiviet { get; set; }
         public virtual DbSet<Chitietchude> Chitietchude { get; set; }
         public virtual DbSet<Chitiethinhthuc> Chitiethinhthuc { get; set; }
@@ -43,6 +43,23 @@ namespace shophoatuoi.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:DefaultSchema", "acomptec_shophoa2017");
+
+            modelBuilder.Entity<Login>(entity =>
+            {
+                entity.HasKey(e => e.Username);
+                    
+                entity.ToTable("LOGIN", "dbo");
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasColumnName("Password")
+                    .HasMaxLength(255);
+
+                entity.Property(e => e.Username)
+                    .IsRequired()
+                    .HasColumnName("Username")
+                    .HasMaxLength(50);
+            });
 
             modelBuilder.Entity<Baiviet>(entity =>
             {
@@ -541,7 +558,7 @@ namespace shophoatuoi.Models
                     .HasColumnName("SP_TEN")
                     .HasMaxLength(50);
 
-                entity.HasOne(d => d.HaMaNavigation)
+                entity.HasOne(d => d.Hinhanh)
                     .WithMany(p => p.Sanpham)
                     .HasForeignKey(d => d.HaMa)
                     .HasConstraintName("FK__SANPHAM__HA_MA__03F0984C");

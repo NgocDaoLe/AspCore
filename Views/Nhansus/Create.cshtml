@@ -4,66 +4,142 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">           
+        <div class="body">
+            <form asp-controller="Nhansus" asp-action="Create" method="post" class="form-horizontal" style="font-family:'Times New Roman', Times, serif;">
+                <div class="row clearfix" style="font-family:'Times New Roman', Times, serif; width: 50%; margin: 0px auto; text-align:center;">
+                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
+                        <h3>
+                            Tạo Mới nhân sự
+                        </h3>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Mã</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsMa" type="text" class="form-control" readonly/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<h4>Nhansu</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NsMa" class="control-label"></label>
-                <input asp-for="NsMa" class="form-control" />
-                <span asp-validation-for="NsMa" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CvMa" class="control-label"></label>
-                <select asp-for="CvMa" class ="form-control" asp-items="ViewBag.CvMa"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsHoten" class="control-label"></label>
-                <input asp-for="NsHoten" class="form-control" />
-                <span asp-validation-for="NsHoten" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsNamsinh" class="control-label"></label>
-                <input asp-for="NsNamsinh" class="form-control" />
-                <span asp-validation-for="NsNamsinh" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsCmnd" class="control-label"></label>
-                <input asp-for="NsCmnd" class="form-control" />
-                <span asp-validation-for="NsCmnd" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsSdt" class="control-label"></label>
-                <input asp-for="NsSdt" class="form-control" />
-                <span asp-validation-for="NsSdt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsDiachi" class="control-label"></label>
-                <input asp-for="NsDiachi" class="form-control" />
-                <span asp-validation-for="NsDiachi" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsUsername" class="control-label"></label>
-                <input asp-for="NsUsername" class="form-control" />
-                <span asp-validation-for="NsUsername" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NsPassword" class="control-label"></label>
-                <input asp-for="NsPassword" class="form-control" />
-                <span asp-validation-for="NsPassword" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Chức vụ</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <select asp-for="CvMa" class="form-control show-tick" asp-items="ViewBag.CvTen"></select> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Họ tên</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsHoten" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Năm sinh</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsNamsinh" type="number" min="1980" max="2010" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>CMND</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsCmnd" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Số Điện Thoại</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsSdt" type="text" maxlength="10" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Địa Chỉ</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsDiachi" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Tài Khoản</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsUsername" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                        <label>Password</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input asp-for="NsPassword" type="password" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix" style="width: 50%; margin: 0px auto; text-align:center;">
+                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
+                        <input type="submit" value="Tạo Mới" class="btn btn-danger" />
+                        <button type="button" class=" btn btn-primary">  <a asp-action="Index">Quay Trở Lại</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
