@@ -15,9 +15,10 @@ namespace shophoatuoi.Controllers
 
 
         // GET: Chitiethinhthucs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
-            var acomptec_shophoaContext = _context.Chitiethinhthuc.Include(c => c.HtMaNavigation).Include(c => c.SpMaNavigation);
+            var acomptec_shophoaContext = _context.Chitiethinhthuc.Include(c => c.HtMaNavigation).Include(c => c.SpMaNavigation).Where(c => c.SpMa == id);
+            ViewBag.SpMa = id;
             return View(await acomptec_shophoaContext.ToListAsync());
         }
 
@@ -42,15 +43,15 @@ namespace shophoatuoi.Controllers
         }
 
         // GET: Chitiethinhthucs/Create
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
+            ViewData["HtTen"] = new SelectList(_context.Hinhthuc, "HtMa", "HtTen");
             int MIN = 0001;
             int MAX = 9999;
             Random RD = new Random();
             Chitiethinhthuc obj = new Chitiethinhthuc();
             obj.CthtMa = RD.Next(MIN, MAX).ToString();
-            ViewData["HtMa"] = new SelectList(_context.Hinhthuc, "HtMa", "HtMa");
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa");
+            ViewBag.SpMa =id;
             return View(obj);
         }
 
@@ -61,15 +62,16 @@ namespace shophoatuoi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CthtMa,HtMa,SpMa")] Chitiethinhthuc chitiethinhthuc)
         {
+            string duongdan = "Index/" + chitiethinhthuc.HtMa; 
             if (ModelState.IsValid)
             {
                 _context.Add(chitiethinhthuc);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","chitiethinhthucs", new { @id = chitiethinhthuc.SpMa});
             }
-            ViewData["HtMa"] = new SelectList(_context.Hinhthuc, "HtMa", "HtMa", chitiethinhthuc.HtMa);
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethinhthuc.SpMa);
-            return View(chitiethinhthuc);
+            //ViewData["HtMa"] = new SelectList(_context.Hinhthuc, "HtMa", "HtTen", chitiethinhthuc.HtMa);
+            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpTen", chitiethinhthuc.SpMa);
+            return View(duongdan);
         }
 
         // GET: Chitiethinhthucs/Edit/5
@@ -86,7 +88,7 @@ namespace shophoatuoi.Controllers
                 return NotFound();
             }
             ViewData["HtMa"] = new SelectList(_context.Hinhthuc, "HtMa", "HtMa", chitiethinhthuc.HtMa);
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethinhthuc.SpMa);
+            //ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethinhthuc.SpMa);
             return View(chitiethinhthuc);
         }
 

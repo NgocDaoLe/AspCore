@@ -65,7 +65,7 @@ namespace shophoatuoi.Controllers
         public async Task<IActionResult> Create([Bind("CthdMa,SpMa,HdMa,KhMa,CthdSoluong,CthdTamtinh,CthdPhigiaohang,CthdThanhtien")] Chitiethoadon chitiethoadon)
         {
            
-            string duongdan = "Index/" + chitiethoadon.HdMa;
+            string duongdan = "Index/" + chitiethoadon.HdMa; 
             if (ModelState.IsValid)
             {
                 _context.Add(chitiethoadon);
@@ -91,7 +91,7 @@ namespace shophoatuoi.Controllers
             {
                 return NotFound();
             }
-            ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
+            //ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
             ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhMa", chitiethoadon.KhMa);
             ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethoadon.SpMa);
             return View(chitiethoadon);

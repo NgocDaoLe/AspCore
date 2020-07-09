@@ -20,6 +20,26 @@ namespace shophoatuoi.Controllers
             var acomptec_shophoaContext = _context.Sanpham.Include(s => s.Hinhanh);
             return View(await acomptec_shophoaContext.ToListAsync());
         }
+        public ActionResult sanphammoi()
+        {
+            var sANPHAMs = _context.Sanpham.Include(s => s.Hinhanh);
+            return View(sANPHAMs.ToList());
+        }
+        public ActionResult spnoibat()
+        {
+            var sANPHAMs = _context.Sanpham.Include(s => s.Hinhanh);
+            return View(sANPHAMs.ToList());
+        }
+        public ActionResult slidesp()
+        {
+            var sANPHAMs = _context.Sanpham.Include(s => s.Hinhanh);
+            return View(sANPHAMs.ToList());
+        }
+        public ActionResult spbanchay()
+        {
+            var sANPHAMs = _context.Sanpham.Include(s => s.Hinhanh);
+            return View(sANPHAMs.ToList());
+        }
 
         // GET: Sanphams/Details/5
         public async Task<IActionResult> Details(string id)

@@ -15,9 +15,10 @@ namespace shophoatuoi.Controllers
 
 
         // GET: Chitiettheloais
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id) 
         {
-            var acomptec_shophoaContext = _context.Chitiettheloai.Include(c => c.SpMaNavigation).Include(c => c.TlMaNavigation);
+            var acomptec_shophoaContext = _context.Chitiettheloai.Include(c => c.SpMaNavigation).Include(c => c.TlMaNavigation).Where(c => c.SpMa == id);
+            ViewBag.SpMa = id;
             return View(await acomptec_shophoaContext.ToListAsync());
         }
 
@@ -42,15 +43,15 @@ namespace shophoatuoi.Controllers
         }
 
         // GET: Chitiettheloais/Create
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
+            ViewData["TlTen"] = new SelectList(_context.Theloai, "TlMa", "TlTen");
             int MIN = 0001;
             int MAX = 9999;
             Random RD = new Random();
             Chitiettheloai obj = new Chitiettheloai();
             obj.CttlMa = RD.Next(MIN, MAX).ToString();
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa");
-            ViewData["TlMa"] = new SelectList(_context.Theloai, "TlMa", "TlMa");
+            ViewBag.SpMa =id;
             return View(obj);
         }
 
@@ -61,15 +62,16 @@ namespace shophoatuoi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CttlMa,TlMa,SpMa")] Chitiettheloai chitiettheloai)
         {
+             string duongdan = "Index/" + chitiettheloai.TlMa;
             if (ModelState.IsValid)
             {
                 _context.Add(chitiettheloai);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","chitiettheloais", new { @id = chitiettheloai.SpMa});
             }
             ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiettheloai.SpMa);
-            ViewData["TlMa"] = new SelectList(_context.Theloai, "TlMa", "TlMa", chitiettheloai.TlMa);
-            return View(chitiettheloai);
+            //ViewData["TlMa"] = new SelectList(_context.Theloai, "TlMa", "TlMa", chitiettheloai.TlMa);
+            return View(duongdan);;
         }
 
         // GET: Chitiettheloais/Edit/5

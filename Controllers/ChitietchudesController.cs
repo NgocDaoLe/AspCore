@@ -16,9 +16,10 @@ namespace shophoatuoi.Controllers
         
 
         // GET: Chitietchudes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id) 
         {
-            var acomptec_shophoaContext = _context.Chitietchude.Include(c => c.CdMaNavigation).Include(c => c.SpMaNavigation);
+            var acomptec_shophoaContext = _context.Chitietchude.Include(c => c.CdMaNavigation).Include(c => c.SpMaNavigation).Where(c => c.SpMa == id);
+            ViewBag.SpMa = id;
             return View(await acomptec_shophoaContext.ToListAsync());
         }
 
@@ -43,15 +44,15 @@ namespace shophoatuoi.Controllers
         }
 
         // GET: Chitietchudes/Create
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
-             int MIN = 0001;
+            ViewData["CdTen"] = new SelectList(_context.Chude, "CdMa", "CdTen");
+            int MIN = 0001;
             int MAX = 9999;
             Random RD = new Random();
             Chitietchude obj = new Chitietchude();
             obj.CtcdMa = RD.Next(MIN, MAX).ToString();
-            ViewData["CdMa"] = new SelectList(_context.Chude, "CdMa", "CdMa");
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa");
+            ViewBag.SpMa =id;
             return View(obj);
         }
 
@@ -62,15 +63,17 @@ namespace shophoatuoi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CtcdMa,CdMa,SpMa")] Chitietchude chitietchude)
         {
+            string duongdan = "Index/" + chitietchude.CdMa; 
             if (ModelState.IsValid)
             {
                 _context.Add(chitietchude);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                 return RedirectToAction("Index","chitietchudes", new { @id = chitietchude.SpMa});
+                
             }
-            ViewData["CdMa"] = new SelectList(_context.Chude, "CdMa", "CdMa", chitietchude.CdMa);
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitietchude.SpMa);
-            return View(chitietchude);
+            //ViewData["CdMa"] = new SelectList(_context.Chude, "CdMa", "CdMa", chitietchude.CdMa);
+            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpTen", chitietchude.SpMa);
+            return View(duongdan);
         }
 
         // GET: Chitietchudes/Edit/5
