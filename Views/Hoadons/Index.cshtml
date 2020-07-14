@@ -68,6 +68,7 @@
                                                         <a asp-action="Index", asp-controller="Chitiethoadons" asp-route-id="@item.HdMa" class="btn bg-orange waves-effect"><i class="material-icons">shopping_cart</i></a>
                                                         <a asp-action="Edit" asp-route-id="@item.HdMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
 														<a asp-action="Delete" asp-route-id="@item.HdMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
+                                                        <a asp-action="Print" asp-controller="Hoadons" asp-route-id="@item.HdMa" class="btn btn-custon-three btn-info" style="color:white;" type="button" target="_blank">Nhấn để In</a>
 													</td>
                                                 </tr>
                                             }

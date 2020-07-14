@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\shophoatuoi.csproj",
+  "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\shophoatuoi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,498 +20521,503 @@
   "RootNamespace": "shophoatuoi",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietchudes\\Index.cshtml",
-      "TargetPath": "Views\\Chitietchudes\\Index.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Delete.cshtml",
+      "TargetPath": "Views\\Chucvus\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiettheloais\\Create.cshtml",
-      "TargetPath": "Views\\Chitiettheloais\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Delete.cshtml",
-      "TargetPath": "Views\\Mausacs\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Details.cshtml",
-      "TargetPath": "Views\\Hoadons\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Logins\\Details.cshtml",
-      "TargetPath": "Views\\Logins\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Baiviets\\Create.cshtml",
-      "TargetPath": "Views\\Baiviets\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chucvus\\Index.cshtml",
-      "TargetPath": "Views\\Chucvus\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhthucs\\Create.cshtml",
-      "TargetPath": "Views\\Hinhthucs\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Logins\\Index.cshtml",
-      "TargetPath": "Views\\Logins\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietmausacs\\Details.cshtml",
-      "TargetPath": "Views\\Chitietmausacs\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Details.cshtml",
-      "TargetPath": "Views\\Chudes\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\_Layout_SanPham.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout_SanPham.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhthucs\\Edit.cshtml",
-      "TargetPath": "Views\\Hinhthucs\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhanhs\\Edit.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhanhs\\Edit.cshtml",
       "TargetPath": "Views\\Hinhanhs\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhanhs\\Delete.cshtml",
-      "TargetPath": "Views\\Hinhanhs\\Delete.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Baiviets\\Create.cshtml",
+      "TargetPath": "Views\\Baiviets\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Khachhangdats\\Create.cshtml",
-      "TargetPath": "Views\\Khachhangdats\\Create.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Mausacs\\Delete.cshtml",
+      "TargetPath": "Views\\Mausacs\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiettheloais\\Edit.cshtml",
-      "TargetPath": "Views\\Chitiettheloais\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethinhthucs\\Index.cshtml",
-      "TargetPath": "Views\\Chitiethinhthucs\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Logins\\Login.cshtml",
-      "TargetPath": "Views\\Logins\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Index.cshtml",
-      "TargetPath": "Views\\Mausacs\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Theloais\\Details.cshtml",
-      "TargetPath": "Views\\Theloais\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Theloais\\Delete.cshtml",
-      "TargetPath": "Views\\Theloais\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhthucs\\Index.cshtml",
-      "TargetPath": "Views\\Hinhthucs\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Theloais\\Edit.cshtml",
-      "TargetPath": "Views\\Theloais\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Baiviets\\Delete.cshtml",
-      "TargetPath": "Views\\Baiviets\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chucvus\\Create.cshtml",
-      "TargetPath": "Views\\Chucvus\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Edit.cshtml",
-      "TargetPath": "Views\\Hoadons\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Details.cshtml",
-      "TargetPath": "Views\\Nhansus\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Create.cshtml",
-      "TargetPath": "Views\\Hoadons\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethinhthucs\\Edit.cshtml",
-      "TargetPath": "Views\\Chitiethinhthucs\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\Delete.cshtml",
-      "TargetPath": "Views\\Sanphams\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Index.cshtml",
-      "TargetPath": "Views\\Chitiethoadons\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Logins\\Edit.cshtml",
-      "TargetPath": "Views\\Logins\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\Details.cshtml",
-      "TargetPath": "Views\\Sanphams\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Theloais\\Create.cshtml",
-      "TargetPath": "Views\\Theloais\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietmausacs\\Delete.cshtml",
-      "TargetPath": "Views\\Chitietmausacs\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Index.cshtml",
-      "TargetPath": "Views\\Chudes\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Delete.cshtml",
-      "TargetPath": "Views\\Nhansus\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chucvus\\Details.cshtml",
-      "TargetPath": "Views\\Chucvus\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhanhs\\Details.cshtml",
-      "TargetPath": "Views\\Hinhanhs\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\sanphammoi.cshtml",
-      "TargetPath": "Views\\Sanphams\\sanphammoi.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhthucs\\Details.cshtml",
-      "TargetPath": "Views\\Hinhthucs\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Create.cshtml",
-      "TargetPath": "Views\\Mausacs\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\spbanchay.cshtml",
-      "TargetPath": "Views\\Sanphams\\spbanchay.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Theloais\\Index.cshtml",
-      "TargetPath": "Views\\Theloais\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\spnoibat.cshtml",
-      "TargetPath": "Views\\Sanphams\\spnoibat.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\Edit.cshtml",
-      "TargetPath": "Views\\Sanphams\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Edit.cshtml",
-      "TargetPath": "Views\\Chitiethoadons\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\_Login.cshtml",
-      "TargetPath": "Views\\Shared\\_Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Logins\\Delete.cshtml",
-      "TargetPath": "Views\\Logins\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Edit.cshtml",
-      "TargetPath": "Views\\Mausacs\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Khachhangdats\\Delete.cshtml",
-      "TargetPath": "Views\\Khachhangdats\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Baiviets\\Edit.cshtml",
-      "TargetPath": "Views\\Baiviets\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethinhthucs\\Create.cshtml",
-      "TargetPath": "Views\\Chitiethinhthucs\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietchudes\\Create.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietchudes\\Create.cshtml",
       "TargetPath": "Views\\Chitietchudes\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Theloais\\Create.cshtml",
+      "TargetPath": "Views\\Theloais\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Delete.cshtml",
-      "TargetPath": "Views\\Chitiethoadons\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Edit.cshtml",
-      "TargetPath": "Views\\Nhansus\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Create.cshtml",
-      "TargetPath": "Views\\Nhansus\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Nhansus\\Index.cshtml",
-      "TargetPath": "Views\\Nhansus\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietmausacs\\Create.cshtml",
-      "TargetPath": "Views\\Chitietmausacs\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Delete.cshtml",
-      "TargetPath": "Views\\Chudes\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiettheloais\\Details.cshtml",
-      "TargetPath": "Views\\Chitiettheloais\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietchudes\\Details.cshtml",
-      "TargetPath": "Views\\Chitietchudes\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietmausacs\\Edit.cshtml",
-      "TargetPath": "Views\\Chitietmausacs\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhanhs\\Index.cshtml",
-      "TargetPath": "Views\\Hinhanhs\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietchudes\\Edit.cshtml",
-      "TargetPath": "Views\\Chitietchudes\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\Index.cshtml",
-      "TargetPath": "Views\\Sanphams\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Khachhangdats\\Edit.cshtml",
-      "TargetPath": "Views\\Khachhangdats\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Khachhangdats\\Index.cshtml",
-      "TargetPath": "Views\\Khachhangdats\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiettheloais\\Index.cshtml",
-      "TargetPath": "Views\\Chitiettheloais\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhthucs\\Delete.cshtml",
-      "TargetPath": "Views\\Hinhthucs\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chucvus\\Edit.cshtml",
-      "TargetPath": "Views\\Chucvus\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietchudes\\Delete.cshtml",
-      "TargetPath": "Views\\Chitietchudes\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethinhthucs\\Delete.cshtml",
-      "TargetPath": "Views\\Chitiethinhthucs\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Khachhangdats\\Details.cshtml",
-      "TargetPath": "Views\\Khachhangdats\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Details.cshtml",
-      "TargetPath": "Views\\Chitiethoadons\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hinhanhs\\Create.cshtml",
-      "TargetPath": "Views\\Hinhanhs\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\Create.cshtml",
-      "TargetPath": "Views\\Sanphams\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethinhthucs\\Details.cshtml",
-      "TargetPath": "Views\\Chitiethinhthucs\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiethoadons\\Create.cshtml",
-      "TargetPath": "Views\\Chitiethoadons\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Delete.cshtml",
-      "TargetPath": "Views\\Hoadons\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Edit.cshtml",
-      "TargetPath": "Views\\Chudes\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Mausacs\\Details.cshtml",
-      "TargetPath": "Views\\Mausacs\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitiettheloais\\Delete.cshtml",
-      "TargetPath": "Views\\Chitiettheloais\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Index.cshtml",
-      "TargetPath": "Views\\Hoadons\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Baiviets\\Index.cshtml",
-      "TargetPath": "Views\\Baiviets\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chitietmausacs\\Index.cshtml",
-      "TargetPath": "Views\\Chitietmausacs\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Baiviets\\Details.cshtml",
-      "TargetPath": "Views\\Baiviets\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Logins\\Create.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Logins\\Create.cshtml",
       "TargetPath": "Views\\Logins\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Sanphams\\slidesp.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\Create.cshtml",
+      "TargetPath": "Views\\Sanphams\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Khachhangdats\\Index.cshtml",
+      "TargetPath": "Views\\Khachhangdats\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Create.cshtml",
+      "TargetPath": "Views\\Chucvus\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Theloais\\Delete.cshtml",
+      "TargetPath": "Views\\Theloais\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hoadons\\Details.cshtml",
+      "TargetPath": "Views\\Hoadons\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietchudes\\Edit.cshtml",
+      "TargetPath": "Views\\Chitietchudes\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethoadons\\Index.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Baiviets\\Details.cshtml",
+      "TargetPath": "Views\\Baiviets\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Mausacs\\Create.cshtml",
+      "TargetPath": "Views\\Mausacs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Logins\\Details.cshtml",
+      "TargetPath": "Views\\Logins\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\Edit.cshtml",
+      "TargetPath": "Views\\Sanphams\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\Index.cshtml",
+      "TargetPath": "Views\\Sanphams\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiettheloais\\Index.cshtml",
+      "TargetPath": "Views\\Chitiettheloais\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethoadons\\Delete.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Khachhangdats\\Details.cshtml",
+      "TargetPath": "Views\\Khachhangdats\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\CHUDEs\\Details.cshtml",
+      "TargetPath": "Views\\CHUDEs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\CHUDEs\\Index.cshtml",
+      "TargetPath": "Views\\CHUDEs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hoadons\\Edit.cshtml",
+      "TargetPath": "Views\\Hoadons\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Shared\\_Layout_SanPham.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout_SanPham.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Khachhangdats\\Edit.cshtml",
+      "TargetPath": "Views\\Khachhangdats\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Details.cshtml",
+      "TargetPath": "Views\\Chucvus\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Baiviets\\Index.cshtml",
+      "TargetPath": "Views\\Baiviets\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhanhs\\Delete.cshtml",
+      "TargetPath": "Views\\Hinhanhs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hoadons\\Print.cshtml",
+      "TargetPath": "Views\\Hoadons\\Print.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Baiviets\\Delete.cshtml",
+      "TargetPath": "Views\\Baiviets\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiettheloais\\Edit.cshtml",
+      "TargetPath": "Views\\Chitiettheloais\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\spnoibat.cshtml",
+      "TargetPath": "Views\\Sanphams\\spnoibat.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Theloais\\Edit.cshtml",
+      "TargetPath": "Views\\Theloais\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hoadons\\Index.cshtml",
+      "TargetPath": "Views\\Hoadons\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietmausacs\\Delete.cshtml",
+      "TargetPath": "Views\\Chitietmausacs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Theloais\\Details.cshtml",
+      "TargetPath": "Views\\Theloais\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Logins\\Login.cshtml",
+      "TargetPath": "Views\\Logins\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\Delete.cshtml",
+      "TargetPath": "Views\\Sanphams\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhthucs\\Index.cshtml",
+      "TargetPath": "Views\\Hinhthucs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hoadons\\Create.cshtml",
+      "TargetPath": "Views\\Hoadons\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Theloais\\Index.cshtml",
+      "TargetPath": "Views\\Theloais\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhthucs\\Delete.cshtml",
+      "TargetPath": "Views\\Hinhthucs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\spbanchay.cshtml",
+      "TargetPath": "Views\\Sanphams\\spbanchay.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Logins\\Delete.cshtml",
+      "TargetPath": "Views\\Logins\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\slidesp.cshtml",
       "TargetPath": "Views\\Sanphams\\slidesp.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chudes\\Create.cshtml",
-      "TargetPath": "Views\\Chudes\\Create.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Khachhangdats\\Delete.cshtml",
+      "TargetPath": "Views\\Khachhangdats\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\sanphammoi.cshtml",
+      "TargetPath": "Views\\Sanphams\\sanphammoi.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Nhansus\\Index.cshtml",
+      "TargetPath": "Views\\Nhansus\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethinhthucs\\Create.cshtml",
+      "TargetPath": "Views\\Chitiethinhthucs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietmausacs\\Create.cshtml",
+      "TargetPath": "Views\\Chitietmausacs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Logins\\Index.cshtml",
+      "TargetPath": "Views\\Logins\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Mausacs\\Index.cshtml",
+      "TargetPath": "Views\\Mausacs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Shared\\_Login.cshtml",
+      "TargetPath": "Views\\Shared\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Logins\\Edit.cshtml",
+      "TargetPath": "Views\\Logins\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhthucs\\Edit.cshtml",
+      "TargetPath": "Views\\Hinhthucs\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Khachhangdats\\Create.cshtml",
+      "TargetPath": "Views\\Khachhangdats\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Sanphams\\Details.cshtml",
+      "TargetPath": "Views\\Sanphams\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietchudes\\Details.cshtml",
+      "TargetPath": "Views\\Chitietchudes\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Edit.cshtml",
+      "TargetPath": "Views\\Chucvus\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethinhthucs\\Delete.cshtml",
+      "TargetPath": "Views\\Chitiethinhthucs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietchudes\\Delete.cshtml",
+      "TargetPath": "Views\\Chitietchudes\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethoadons\\Edit.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Baiviets\\Edit.cshtml",
+      "TargetPath": "Views\\Baiviets\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietmausacs\\Details.cshtml",
+      "TargetPath": "Views\\Chitietmausacs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhanhs\\Details.cshtml",
+      "TargetPath": "Views\\Hinhanhs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethoadons\\Create.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietmausacs\\Edit.cshtml",
+      "TargetPath": "Views\\Chitietmausacs\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Nhansus\\Details.cshtml",
+      "TargetPath": "Views\\Nhansus\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhanhs\\Create.cshtml",
+      "TargetPath": "Views\\Hinhanhs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhthucs\\Details.cshtml",
+      "TargetPath": "Views\\Hinhthucs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chucvus\\Index.cshtml",
+      "TargetPath": "Views\\Chucvus\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethinhthucs\\Details.cshtml",
+      "TargetPath": "Views\\Chitiethinhthucs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhanhs\\Index.cshtml",
+      "TargetPath": "Views\\Hinhanhs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietmausacs\\Index.cshtml",
+      "TargetPath": "Views\\Chitietmausacs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethinhthucs\\Index.cshtml",
+      "TargetPath": "Views\\Chitiethinhthucs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethoadons\\Details.cshtml",
+      "TargetPath": "Views\\Chitiethoadons\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiethinhthucs\\Edit.cshtml",
+      "TargetPath": "Views\\Chitiethinhthucs\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hoadons\\Delete.cshtml",
+      "TargetPath": "Views\\Hoadons\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Nhansus\\Edit.cshtml",
+      "TargetPath": "Views\\Nhansus\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\CHUDEs\\Delete.cshtml",
+      "TargetPath": "Views\\CHUDEs\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Chucvus\\Delete.cshtml",
-      "TargetPath": "Views\\Chucvus\\Delete.cshtml",
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Mausacs\\Edit.cshtml",
+      "TargetPath": "Views\\Mausacs\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Mausacs\\Details.cshtml",
+      "TargetPath": "Views\\Mausacs\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Nhansus\\Delete.cshtml",
+      "TargetPath": "Views\\Nhansus\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiettheloais\\Details.cshtml",
+      "TargetPath": "Views\\Chitiettheloais\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\CHUDEs\\Create.cshtml",
+      "TargetPath": "Views\\CHUDEs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\CHUDEs\\Edit.cshtml",
+      "TargetPath": "Views\\CHUDEs\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitietchudes\\Index.cshtml",
+      "TargetPath": "Views\\Chitietchudes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiettheloais\\Delete.cshtml",
+      "TargetPath": "Views\\Chitiettheloais\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Chitiettheloais\\Create.cshtml",
+      "TargetPath": "Views\\Chitiettheloais\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Hinhthucs\\Create.cshtml",
+      "TargetPath": "Views\\Hinhthucs\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\X507M-PC\\Desktop\\AspCore\\Views\\Nhansus\\Create.cshtml",
+      "TargetPath": "Views\\Nhansus\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],

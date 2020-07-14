@@ -11,7 +11,7 @@ namespace shophoatuoi.Models
         public string CthdMa { get; set; }
         [DisplayName("SẢN PHẨM")]
         public string SpMa { get; set; }
-        [DisplayName("HÌNH ẢNH")]
+        [DisplayName("Mã HÓA ĐƠN")]
         public string HdMa { get; set; }
         [DisplayName("KHÁCH HÀNG")]
         public string KhMa { get; set; }
@@ -23,7 +23,6 @@ namespace shophoatuoi.Models
         public double CthdPhigiaohang { get; set; }
         [DisplayName("THÀNH TIỀN")]
         public double CthdThanhtien { get; set; }
-
         public virtual Hoadon HdMaNavigation { get; set; }
         public virtual Khachhangdat KhMaNavigation { get; set; }
         public virtual Sanpham SpMaNavigation { get; set; }

@@ -7709,19 +7709,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\X507M-PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\shophoatuoi.csproj",
+      "projectUniqueName": "C:\\Users\\X507M-PC\\Desktop\\AspCore\\shophoatuoi.csproj",
       "projectName": "shophoatuoi",
-      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\shophoatuoi.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\obj\\",
+      "projectPath": "C:\\Users\\X507M-PC\\Desktop\\AspCore\\shophoatuoi.csproj",
+      "packagesPath": "C:\\Users\\X507M-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\X507M-PC\\Desktop\\AspCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\X507M-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
