@@ -33,7 +33,7 @@
                                                 <th>
                                                     @Html.DisplayNameFor(model => model.Hinhanh.HaUrl)
                                                 </th>
-                                                <th style="width: 305px"></th>
+                                                <th style="width: 270px"></th>
                                             </tr>
                                         </thead>
 
@@ -58,8 +58,6 @@
                                                              <a href="@Url.Action("Index","CHITIETMAUSACs", new { id = item.SpMa })" class="btn bg-blue waves-effect"><i class="material-icons">color_lens</i></a>
                                                              <a href="@Url.Action("Index","CHITIETTHELOAIs", new { id = item.SpMa })" class="btn bg-yellow waves-effect"><i class="material-icons">settings_brightness</i></a>
                                                              <a href="@Url.Action("Index","CHITIETHINHTHUCs", new { id = item.SpMa })" class="btn bg-pink waves-effect"><i class="material-icons">flip_to_back</i></a>
-                                                             
-                                                             
                                                              <a href="@Url.Action("Edit","SANPHAMs", new { id = item.SpMa })" class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
                                                              <a href="@Url.Action("Delete", "SANPHAMs", new { id = item.SpMa })" class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>
                                                          </td>

@@ -16,10 +16,11 @@ namespace shophoatuoi.Controllers
         
 
         // GET: Chitietmausacs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
-            var acomptec_shophoaContext = _context.Chitietmausac.Include(c => c.MsMaNavigation).Include(c => c.SpMaNavigation);
-            return View(await acomptec_shophoaContext.ToListAsync());
+            var acomptec_shophoaContext = _context.Chitietmausac.Include(c => c.MsMaNavigation).Include(c => c.SpMaNavigation).Where(c => c.SpMa == id);
+            ViewBag.SpMa = id;
+            return View(await acomptec_shophoaContext.ToListAsync()); 
         }
 
         // GET: Chitietmausacs/Details/5
@@ -43,15 +44,15 @@ namespace shophoatuoi.Controllers
         }
 
         // GET: Chitietmausacs/Create
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
+            ViewData["MsTen"] = new SelectList(_context.Mausac, "MsMa", "MsTen");
             int MIN = 0001;
             int MAX = 9999;
             Random RD = new Random();
             Chitietmausac obj = new Chitietmausac();
             obj.CtmsMa = RD.Next(MIN, MAX).ToString();
-            ViewData["MsMa"] = new SelectList(_context.Mausac, "MsMa", "MsMa");
-            ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa");
+            ViewBag.SpMa =id;
             return View(obj);
         }
 
@@ -62,15 +63,16 @@ namespace shophoatuoi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CtmsMa,MsMa,SpMa")] Chitietmausac chitietmausac)
         {
+            string duongdan = "Index/" + chitietmausac.MsMa; 
             if (ModelState.IsValid)
             {
                 _context.Add(chitietmausac);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index","chitietmausacs", new { @id = chitietmausac.SpMa});
             }
-            ViewData["MsMa"] = new SelectList(_context.Mausac, "MsMa", "MsMa", chitietmausac.MsMa);
+            //ViewData["MsMa"] = new SelectList(_context.Mausac, "MsMa", "MsMa", chitietmausac.MsMa);
             ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitietmausac.SpMa);
-            return View(chitietmausac);
+            return View(duongdan);
         }
 
         // GET: Chitietmausacs/Edit/5

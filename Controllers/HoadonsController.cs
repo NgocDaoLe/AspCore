@@ -1,3 +1,5 @@
+using System.Security.Authentication.ExtendedProtection;
+using System.Security.AccessControl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using shophoatuoi.Models;
+//using extention 
 
 namespace shophoatuoi.Controllers
 {
@@ -36,7 +39,43 @@ namespace shophoatuoi.Controllers
 
             return View(hoadon);
         }
+        // GET: Chitiethoadons/Print/5
+        // public static class Extensions
+        // {
+        //     public static IQueryable<Hoadon> CompleteHoaDon(this acomptec_shophoaContext _context)
+        //     {
+        //             return _context.Hoadon
+        //                 .Include(c => c.Chitiethoadon);
+                        
+        //         }
 
+        //     public static Hoadon CompanyById(this acomptec_shophoaContext _context, string id)
+        //     {
+        //         return _context.Hoadon
+        //             .Include(c => c.Chitiethoadon)
+        //             .FirstOrDefault(c => c.HdMa == id) ;
+        //     }
+
+        // }
+        public async Task<IActionResult> Print(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var hoadon = await _context.Hoadon
+                .Include(c => c.Chitiethoadon)
+                // chỗ này để model sản phẩm để lấy ra tên sp
+                .FirstOrDefaultAsync(m => m.HdMa == id);
+            if (hoadon == null)
+            {
+                return NotFound();
+            }
+
+            return View(hoadon);
+        }
+               
         // GET: Hoadons/Create
         public IActionResult Create()
         {

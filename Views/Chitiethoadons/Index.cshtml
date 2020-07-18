@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="table-responsive">
+                    <div class="table-responsive"> 
                         <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
                             <div class="row">
                                 <div class="col-sm-12">
@@ -21,48 +21,49 @@
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.CthdSoluong)
-                                                </th>
-                                                <th>
-                                                    @Html.DisplayNameFor(model => model.CthdTamtinh)
-                                                </th>
-                                                <th>
-                                                    @Html.DisplayNameFor(model => model.CthdPhigiaohang)
-                                                </th>
-                                                <th>
                                                     @Html.DisplayNameFor(model => model.KhMaNavigation.KhTen)
                                                 </th>
                                                 <th>
                                                     @Html.DisplayNameFor(model => model.SpMaNavigation.SpTen)
                                                 </th>
+                                                
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.CthdSoluong)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.CthdPhigiaohang)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.CthdTamtinh)
+                                                </th>
+                                                
 												<th style="width: 80px"></th>
                                             </tr>
                                         </thead>
 
-                                        <tbody>
+                                        <tbody> 
                                             @foreach (var item in Model)
                                             {
                                                 <tr>
-                                                    <td>
-                                                        @Html.DisplayFor(modelItem => item.CthdSoluong)
-                                                    </td>
-													<td>
-                                                        <td>
-                                                        @Html.DisplayFor(modelItem => item.CthdTamtinh)
-                                                    </td>
-                                                    <td>
-                                                        @Html.DisplayFor(modelItem => item.CthdPhigiaohang)
-                                                    </td>
-													<td>
-                                                        <td>
-                                                        @Html.DisplayFor(modelItem => item.CthdThanhtien)
-                                                    </td>
-                                                    <td>
+                                                     <td>
                                                         @Html.DisplayFor(modelItem => item.KhMaNavigation.KhTen)
                                                     </td>
+
                                                      <td>
                                                         @Html.DisplayFor(modelItem => item.SpMaNavigation.SpTen)
                                                     </td>
+
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.CthdSoluong)
+                                                    </td>
+													
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.CthdPhigiaohang)
+                                                    </td>
+													<td>   
+                                                        @Html.DisplayFor(modelItem => item.CthdTamtinh)
+                                                    </td>
+                                                   
 													<td>
                                                         <a asp-action="Edit" asp-route-id="@item.CthdMa"class="btn bg-orange waves-effect"><i class="material-icons">build</i></a>
 														<a asp-action="Delete" asp-route-id="@item.CthdMa"class="btn bg-red waves-effect"><i class="material-icons">delete</i></a>

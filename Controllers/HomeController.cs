@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using shophoatuoi.Models;
 using Microsoft.AspNetCore.Session;
 using Microsoft.AspNetCore.Http;
+using System.Web;
+using System.IO;
 
 namespace shophoatuoi.Controllers
 {
@@ -23,11 +25,11 @@ namespace shophoatuoi.Controllers
 
         public IActionResult Index()
         {
+              
             ViewBag.User = HttpContext.Session.GetString("User");
             return View();
         }
-
-
+        
         public IActionResult Privacy()
         {
             return View();

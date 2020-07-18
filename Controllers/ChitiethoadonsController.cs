@@ -20,7 +20,37 @@ namespace shophoatuoi.Controllers
             ViewBag.HdMa = id;
             return View(await acomptec_shophoaContext.ToListAsync());
         }
+        // GET: Chitiethoadons/Print/5
+        
+        /*public async Task<IActionResult> Print(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var hoadon = await _context.Hoadon
+                .Include(c => c.HdMa)
+                
+                .FirstOrDefaultAsync(m => m.HdMa == id);
+
+            if (hoadon == null)
+            {
+                return NotFound();
+            }
+
+            var chitiethoadon = await _context.Chitiethoadon
+                .Include(c => c.HdMaNavigation)
+                .Include(c => c.KhMaNavigation)
+                .Include(c => c.SpMaNavigation)
+                .FirstOrDefaultAsync(m => m.CthdMa == id);
+            if (chitiethoadon == null)
+            {
+                return NotFound();
+            }
+
+            return View(hoadon);
+        }*/
         // GET: Chitiethoadons/Details/5
         public async Task<IActionResult> Details(string id)
         {
@@ -65,7 +95,7 @@ namespace shophoatuoi.Controllers
         public async Task<IActionResult> Create([Bind("CthdMa,SpMa,HdMa,KhMa,CthdSoluong,CthdTamtinh,CthdPhigiaohang,CthdThanhtien")] Chitiethoadon chitiethoadon)
         {
            
-            string duongdan = "Index/" + chitiethoadon.HdMa;
+            string duongdan = "Index/" + chitiethoadon.HdMa; 
             if (ModelState.IsValid)
             {
                 _context.Add(chitiethoadon);
@@ -91,7 +121,7 @@ namespace shophoatuoi.Controllers
             {
                 return NotFound();
             }
-            ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
+            //ViewData["HdMa"] = new SelectList(_context.Hoadon, "HdMa", "HdMa", chitiethoadon.HdMa);
             ViewData["KhMa"] = new SelectList(_context.Khachhangdat, "KhMa", "KhMa", chitiethoadon.KhMa);
             ViewData["SpMa"] = new SelectList(_context.Sanpham, "SpMa", "SpMa", chitiethoadon.SpMa);
             return View(chitiethoadon);

@@ -28,14 +28,14 @@
                     </div>
                 </div>
 
-               <div class="row clearfix">
+                <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                         <label asp-for="CdMa">Chủ Đề</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <select asp-for="CdMa" class ="form-control" asp-items="ViewBag.CdMa"></select>
+                                <select asp-for="CdMa" class ="form-control" asp-items="ViewBag.CdTen"></select>
                             </div>
                         </div>
                     </div>
@@ -44,16 +44,18 @@
             
                 <div class="row clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                        <label asp-for="SpMa">Sản Phẩm</label>
+                        <label>Sản Phẩm</label>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                         <div class="form-group">
                             <div class="form-line">
-                                <select asp-for="SpMa" class ="form-control" asp-items="ViewBag.SpMa"></select>
+                                <input asp-for="SpMa" class="form-control" value="@ViewBag.SpMa" readonly="readonly"/>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 
                   <div class="row clearfix" style="width: 50%; margin: 0px auto; text-align:center;">

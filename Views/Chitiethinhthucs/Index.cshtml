@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="header">
                     <div class="card-header" style="font-family:'Times New Roman', Times, serif; font-size:30px ;width: 50%; margin: 0px auto; text-align:center;">
-                        <strong class="card-title">Chi Tiết Hình Thức - <a asp-action="Create" style="color: deeppink;">Tạo Mới</a></strong>
+                        <strong class="card-title">Chi Tiết Hình Thức - <a asp-action ="Create" asp-route-id="@ViewBag.SpMa" style="color: deeppink;">Tạo Mới</a></strong>
                     </div>
                 </div>
                      <div class="body">
@@ -30,7 +30,7 @@
                                                     <th>
                                                         @Html.DisplayNameFor(model => model.SpMaNavigation.SpTen)
                                                     </th>
-                                                    <th style="width: 115px"></th>
+                                                    <th style="width: 80px"></th>
 
 
                                                 </tr>

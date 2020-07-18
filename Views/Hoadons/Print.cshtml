@@ -1,0 +1,65 @@
+@model shophoatuoi.Models.Hoadon
+@{
+    ViewData["Title"] = "Print";
+    Layout = "";
+}
+
+<html>
+<head>
+	<link href="~/StylePrint.css" rel="stylesheet" />
+    <style>
+        	table, th, td {
+        	    border: 1px solid black;
+        	    border-collapse: collapse;
+        	}
+        </style>
+</head>
+
+<body onload="window.print()">
+	<div class="book">
+		<div class="page">
+            <div class="subpage">
+                <h1 style="text-align: center;">Hóa Đơn Mua Hàng</h1>
+                <p style="text-align: center; "><i>Cửa Hàng Shop Hoa Tươi</i><p>
+                <p>Mã hóa đơn: @Model.HdMa </p>
+                <p>Ngày đặt:  @Model.HdNgaydat </p>
+                <p>Ngày giao:  @Model.HdNgyagiao </p>
+                <p>Tên người nhận:  @Model.HdTennguoinhan </p>
+                <p>SĐT người nhận:  @Model.HdSdtnguoinhan </p>
+                <p>Địa chỉ người nhận:  @Model.HdDiachinguoinhan</p>
+                <p>Danh sách sản phẩm: </p>
+                
+                <table style="width: 100%; text-align: center;">
+                    <th>Mặt Hàng</th>
+                    <th>Số Lượng</th>
+                    <th>Chi Phí Giao Hàng</th>
+                    <th>Tạm Tính</th>
+                    @{
+                        double tong = 0;
+                    }
+                    @foreach (var item in Model.Chitiethoadon)
+                    {
+                        tong = item.CthdTamtinh + item.CthdPhigiaohang + tong;
+                        <tr>  
+                            <td>
+                                @item.SpMa
+                            </td>
+                            <td>   
+                                @item.CthdSoluong
+                            </td>
+                            <td>   
+                                @item.CthdPhigiaohang
+                            </td>
+                            <td>   
+                                @item.CthdTamtinh
+                            </td>
+                        </tr>
+                        
+                    }
+                </table>
+                <p>Số Tiền Phải Trả: @tong</p>
+		    </div>
+        </div>
+	</div>
+</body>
+</html>

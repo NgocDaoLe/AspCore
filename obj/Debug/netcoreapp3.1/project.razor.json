@@ -20971,6 +20971,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Hoadons\\Print.cshtml",
+      "TargetPath": "Views\\Hoadons\\Print.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ASUS\\OneDrive\\Máy tính\\shophoatuoi\\shophoatuoi\\Views\\Baiviets\\Index.cshtml",
       "TargetPath": "Views\\Baiviets\\Index.cshtml",
       "FileKind": "mvc"

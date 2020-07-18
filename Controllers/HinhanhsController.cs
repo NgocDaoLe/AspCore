@@ -11,13 +11,7 @@ namespace shophoatuoi.Controllers
 {
     public class HinhanhsController : Controller
     {
-        private readonly acomptec_shophoaContext _context;
-
-        public HinhanhsController(acomptec_shophoaContext context)
-        {
-            _context = context;
-        }
-
+        private readonly acomptec_shophoaContext _context = new acomptec_shophoaContext();
         // GET: Hinhanhs
         public async Task<IActionResult> Index()
         {
